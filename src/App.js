@@ -3,7 +3,7 @@ import { useEffect, useContext } from 'react';
 
 // components
 import Header from './components/Header/Header.js';
-import Definitions from './components/definitions/Definitions.js';
+import Definitions from './components/Definitions/Definitions.js';
 
 // context
 import dictionaryContext from './context/dictionary/context.js';
@@ -52,8 +52,8 @@ const App = () => {
     <div
       className="App"
       style={{
-        backgroundColor: isLight ? '#1a1a1a' : '#dadada',
-        color: isLight ? '#dadada' : '#1a1a1a',
+        backgroundColor: isLight ? '#333' : '#dadada',
+        color: isLight ? '#dadada' : '#333',
       }}
     >
       <Container maxWidth="md" className="muiContainer">
@@ -69,7 +69,6 @@ const App = () => {
             checked={isLight}
             onChange={() => setIsLight(!isLight)}
           />
-          <span></span>
         </div>
 
         <Header />

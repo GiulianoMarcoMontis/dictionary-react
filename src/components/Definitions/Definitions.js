@@ -9,6 +9,7 @@ const Definitions = () => {
   // context for fetched data
   const { meanings, language, word, isLight } = useContext(dictionaryContext);
   console.log(meanings);
+
   return (
     <section className="Definitions">
       {/* audio */}
@@ -23,7 +24,9 @@ const Definitions = () => {
       )}
 
       {word === '' ? (
-        <span className="subTitle">Type a word</span>
+        <span className="subTitle">
+          Select a language & type a word to start
+        </span>
       ) : (
         meanings.map((meaning) =>
           meaning.meanings.map((item) =>
@@ -31,8 +34,13 @@ const Definitions = () => {
               <div
                 className="singleDefinition__Container"
                 style={{
-                  backgroundColor: isLight ? '#dadada' : '#222',
-                  color: isLight ? '#1a1a1a' : '#dadada',
+                  background: isLight
+                    ? 'linear-gradient(145deg, #c4c4c4, #e9e9e9)'
+                    : 'linear-gradient(145deg, #2e2e2e, #373737)',
+                  color: isLight ? '#333' : '#dadada',
+                  boxShadow: isLight
+                    ? '5px 5px 10px #1c1c1c, -5px -5px 10px #4a4a4a'
+                    : '5px 5px 10px #767676, -5px -5px 10px #ffffff',
                 }}
               >
                 {/* definition */}

@@ -27,23 +27,14 @@ const Header = () => {
   return (
     <section className="headerContainer">
       <div className="title">
-        <h1>{`dictionary( {`}</h1>
-        {word ? (
-          <span className="word">
-            {`${word}`}
-            <br />
-          </span>
-        ) : (
-          <br />
-        )}
-        <h1>{` } )`}</h1>
+        <h1>dictionary( )</h1>
       </div>
       <div className="inputFields">
         <ThemeProvider theme={darkTheme}>
           <TextField
             className="searchTerm"
             id="standard-basic"
-            label="Type a word"
+            label="Search"
             value={word}
             onChange={(evt) => setWord(evt.target.value)}
           />

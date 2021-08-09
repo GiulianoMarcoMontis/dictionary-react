@@ -1,5 +1,6 @@
 const languages = [
-  { value: 'English', label: 'en' },
+  { value: 'English (UK)', label: 'en_GB' },
+  { value: 'English (US)', label: 'en_US' },
   { value: 'Hindi', label: 'hi' },
   { value: 'Spanish', label: 'es' },
   { value: 'French', label: 'fr' },
