@@ -4,16 +4,14 @@ import ReactDOM from 'react-dom';
 // Provider & context
 import DictionaryProvider from './context/dictionary/Provider.js';
 
-import App from './App';
+import App from './components/App/App.js';
 
 // styling
 import './index.scss';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <DictionaryProvider>
-      <App />
-    </DictionaryProvider>
-  </React.StrictMode>,
+  <DictionaryProvider>
+    <App />
+  </DictionaryProvider>,
   document.getElementById('root')
 );
