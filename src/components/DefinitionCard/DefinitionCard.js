@@ -26,9 +26,9 @@ const DefinitionCard = ({ meaning }) => {
         variant="outlined"
         style={{
           background: isLight
-            ? 'linear-gradient(145deg, #c4c4c4, #e9e9e9)'
+            ? 'linear-gradient(145deg, #f3f3f3, #e9e9e9)'
             : 'linear-gradient(145deg, #2e2e2e, #373737)',
-          color: isLight ? '#333' : '#dadada',
+          color: isLight ? '#333' : '#f3f3f3',
           boxShadow: isLight
             ? '5px 5px 10px #1c1c1c, -5px -5px 10px #4a4a4a'
             : '5px 5px 10px #767676, -5px -5px 10px #ffffff',

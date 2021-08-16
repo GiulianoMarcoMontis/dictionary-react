@@ -1,9 +1,11 @@
 import { useContext } from 'react';
 
 // context
+
 import dictionaryContext from '../../context/dictionary/context.js';
 
 // material-ui components
+
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import {
   MenuItem,
@@ -16,18 +18,18 @@ import {
 } from '@material-ui/core';
 
 // material-ui icons
+
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
 
 // styles
 
-// styles
 import useStyles from './styles.js';
-
 import { withStyles } from '@material-ui/core/styles';
 import { purple } from '@material-ui/core/colors';
 
 // nation categories for select text input field
+
 import languages from './languages.js';
 
 const Header = () => {
@@ -61,7 +63,7 @@ const Header = () => {
   const darkTheme = createTheme({
     palette: {
       primary: {
-        main: isLight ? '#dadada' : '#696969',
+        main: isLight ? '#fefefe' : '#696969',
       },
       type: isLight ? 'dark' : 'light',
     },
@@ -97,7 +99,9 @@ const Header = () => {
               id="standard-basic"
               label="Search"
               fullWidth
-              className={classes.inputText}
+              className={
+                isLight ? classes.inputText_Light : classes.inputText_Dark
+              }
               value={word}
               onChange={(evt) => setWord(evt.target.value)}
             />
@@ -108,7 +112,11 @@ const Header = () => {
               select
               label="Languages"
               fullWidth
-              className={classes.inputLanguage}
+              className={
+                isLight
+                  ? classes.inputLanguage_Light
+                  : classes.inputLanguage_Dark
+              }
               value={language}
               onChange={(evt) => {
                 setLanguage(evt.target.value);

@@ -48,17 +48,3 @@ const Definitions = () => {
 };
 
 export default Definitions;
-
-/*{word === '' ? (
-        <Typography variant="h2" align="center">
-          Select a language & type a word to start
-        </Typography>
-      ) : (
-        meanings.map((meaning) =>
-          meaning.meanings.map((item) =>
-            item.definitions.map((definition, i, meaning) => (
-              <DefinitionCard definition={definition} key={i} />
-            ))
-          )
-        )
-      )} */

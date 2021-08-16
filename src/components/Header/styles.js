@@ -30,15 +30,24 @@ export default makeStyles((theme) => ({
     },
   },
 
-  inputText: {
+  inputText_Light: {
     '& input': { fontSize: '2rem' },
-    '& label': { fontSize: '1.5rem' },
+    '& label': { fontSize: '1.5rem', color: 'goldenrod' },
     marginBottom: '1rem',
   },
-
-  inputLanguage: {
+  inputText_Dark: {
+    '& input': { fontSize: '2rem' },
+    '& label': { fontSize: '1.5rem', color: 'rebeccapurple' },
+    marginBottom: '1rem',
+  },
+  inputLanguage_Light: {
     '& div': { fontSize: '2rem' },
-    '& label': { fontSize: '1.5rem' },
+    '& label': { fontSize: '1.5rem', color: 'goldenrod' },
+    marginBottom: '1rem',
+  },
+  inputLanguage_Dark: {
+    '& div': { fontSize: '2rem' },
+    '& label': { fontSize: '1.5rem', color: 'rebeccapurple' },
     marginBottom: '1rem',
   },
 }));
