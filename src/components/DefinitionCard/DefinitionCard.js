@@ -53,7 +53,7 @@ const DefinitionCard = ({ meaning }) => {
             gutterBottom
           >
             {meaning.word}{' '}
-            <Typography variant="caption">{meaning.phonetic}</Typography>
+            <Typography variant="h6">{meaning.phonetic}</Typography>
           </Typography>
           {meaning.origin && (
             <>

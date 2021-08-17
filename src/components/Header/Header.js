@@ -87,7 +87,6 @@ const Header = () => {
         dictionary()
       </Typography>
 
-      {/* <div className="inputFields"> */}
       <ThemeProvider theme={darkTheme}>
         <Grid
           container
@@ -133,7 +132,6 @@ const Header = () => {
           </Grid>
         </Grid>
       </ThemeProvider>
-      {/* </div> */}
     </Container>
   );
 };

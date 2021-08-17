@@ -28,6 +28,6 @@ export default makeStyles((theme) => ({
   },
 
   singleDefinition__break: {
-    margin: '0.5rem 0',
+    margin: '1rem 0',
   },
 }));

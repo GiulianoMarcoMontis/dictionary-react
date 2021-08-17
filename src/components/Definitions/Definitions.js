@@ -22,7 +22,7 @@ const Definitions = () => {
   const classes = useStyles();
 
   return (
-    <Container className={classes.definitionsContainer}>
+    <Container>
       {/* audio */}
       {meanings[0] && word && language === 'en' && (
         <audio
