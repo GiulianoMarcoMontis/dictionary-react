@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useEffect, useContext, lazy, Suspense } from 'react';
+import { useEffect, useContext } from 'react';
 
 // components
 
@@ -13,7 +13,6 @@ import dictionaryContext from '../../context/dictionary/context.js';
 // material-ui components
 
 import { Container, CssBaseline, Fade } from '@material-ui/core';
-import BathtubIcon from '@material-ui/icons/Bathtub';
 
 // styles
 
