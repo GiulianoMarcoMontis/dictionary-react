@@ -6,7 +6,6 @@ export default makeStyles((theme) => ({
   },
   App: {
     minHeight: '100vh',
-    minWidth: '100vw',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',

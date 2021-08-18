@@ -50,6 +50,7 @@ const App = () => {
     <>
       <CssBaseline />
       <Container
+        maxWidth="fluid"
         className={`${classes.root} ${classes.App}`}
         style={{
           backgroundColor: isLight ? '#333' : '#dadada',
