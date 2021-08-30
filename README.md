@@ -1,6 +1,6 @@
 # [dictionary()](https://dictionary-react-eight.vercel.app/)
 
-dictionary() is a website which helps you finding the meaning of any word you are looking for.
+dictionary() helps you finding the meaning of any word you are looking for.
 Using it is as simple as selecting a language and just typing the word you need to find.
 The website supports 12 different languages and can be also installed as PWA (Progressive Web Application) on mobile and desktop.
 
